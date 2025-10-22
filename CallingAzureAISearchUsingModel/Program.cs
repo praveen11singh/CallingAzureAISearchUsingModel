@@ -1,4 +1,4 @@
-﻿using Azure.AI.Agents.Persistent;
+using Azure.AI.Agents.Persistent;
 using Azure.Identity;
 using Azure;
 //using Microsoft.Extensions.Configuration;
@@ -19,7 +19,7 @@ AzureAISearchToolResource searchResource = new(
     indexConnectionId: azureAiSearchConnectionId,
     indexName: "azureblob-index",
     topK: 5,
-    filter: "interface eq 'xxxx'",
+    filter: "city eq 'xxxx'",
     queryType: AzureAISearchQueryType.Simple
 );
 
